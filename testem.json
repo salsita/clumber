@@ -1,0 +1,10 @@
+{
+  "framework": "jasmine",
+
+  "src_files": [
+    "clumber.js",
+    "tests/clumber.specs.js"
+  ],
+
+  "launch_in_dev": ["Chrome"]
+}
