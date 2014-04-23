@@ -9,7 +9,7 @@ See: `clumber.js` for in-code documentation and `test/clumber.specs.js` for exam
 
 Functions can be instrumented by passing the original function to `Clumber.plumbFunction` and getting the instrumented function upon call go the `.setup()`.
 
-`.replace`, `.plumbBefore`, `.plumbAfter`, `.plumbWrapper` set functions to replace, to called before and after and to wrap the original function. 
+`.replace`, `.plumbBefore`, `.plumbAfter`, `.plumbWrapper` set functions to replace, to be called before and after and to wrap the original function. 
 
 Based on the `mutable` flag the before / after functions can alter the function arguments and return value _(see `.plumbBefore` / `.plumbAfter` details below)_.
 
@@ -36,11 +36,11 @@ Based on the `mutable` flag the before / after functions can alter the function 
 
 ### Instrumenting objects / prototypes
 
-Use `Clumber.plumb(...)`, providing either instance or prototype, and a name of the function to instrument.
+Use `Clumber.plumb(...)`, providing either instance or prototype, and the name of the function to instrument.
 
 Use same instrumentation as for functions.
 
-Finish instrumentation by calling `instal()`.
+Finish instrumentation by calling `install()`.
 
 	var handler = Clumber.plumb( instance,  'functionName' )
 		[ .replace( replacementFunction ) ]
